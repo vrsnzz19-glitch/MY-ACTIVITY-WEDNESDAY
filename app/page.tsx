@@ -1,9 +1,16 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center p-24 bg-gray-50 text-gray-900">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Iverson Loquere</h1>
-        <p className="text-lg text-gray-600">BSIT 3 – Section 2 | Midterm Assignment No. 2</p>
+    <main className="p-8">
+      <h1 className="text-2xl font-bold">Hello, my name is Iverson Loquere</h1>
+      <p className="mt-2">
+       Third-year BSIT student ko sa Domain Course 6 nga naghimo sa akong unang Next.js app gamit ang file-based routing. Karong adlawa gihuman nako ang Lab 1 Checkpoint uban ang shared navigation ug mga pages.
+      </p>
+      <div className="mt-4">
+        <Link href="/projects" className="underline">
+          See my projects
+        </Link>
       </div>
     </main>
   );
